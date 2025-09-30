@@ -1,12 +1,12 @@
-const backgroundColorArr = [
-  "#d51811",
-  "#F9EDD3",
-  "#fff",
-  "whitesmoke",
-  "#ccddff",
-];
+const backgroundColorArr = ["#d51811", "#F9EDD3", "#fff", "#FFC83A", "#ccddff"];
 
-const anchors = ["Section01", "Section02", "Section03", "addfooter"];
+const anchors = [
+  "Section01",
+  "Section02",
+  "Section03",
+  "Section04",
+  "addfooter",
+];
 
 let pageColorMap = new Map();
 let header;

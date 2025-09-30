@@ -9,67 +9,261 @@
   padding-left: var(--header-width);
 }
 
-#section0 {
-  background: url("../img/Background_01.jpg") center center / cover no-repeat;
-}
-
-#section1 {
-  background: url("../img/Background_02.jpg") center center / cover no-repeat;
-}
-
-#section1 .inner {
-  max-width: 1280px;
-  width: calc(100% - 40px);
+.inner {
+  max-width: 1562px;
+  width: calc(100% - 52px);
+  padding: 0 52px;
   margin: 0 auto;
 }
 
-#section1 .inner h2 {
-  font-size: 40px;
+#section0 {
+}
+
+#section0 .inner .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#section0 .inner .list .main_visual {
+  position: relative;
+  max-width: 1458px;
+}
+
+#section0 .inner .list .main_visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+#section0 .inner .list .text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#section0 .inner .list .text h2 {
+  font-family: var(--heading-04-font);
+  font-size: var(--heading-04-size);
+  text-align: var(--heading-04-lineheight);
   color: #fff;
-  margin-bottom: 40px;
+}
+
+#section0 .inner .list .text h2 span {
+  color: #ffc83a;
+}
+
+#section0 .inner .list .text p {
+  font-family: var(--body-02-font);
+  font-weight: var(--body-02-weight);
+  font-size: var(--body-02-size);
+  line-height: var(--body-02-lineheight);
+  color: #fff;
+}
+
+#section1 {
+}
+
+#section1 .inner .text {
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#section1 .inner .text .text-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#section1 .inner .text .text-title h2 {
+  font-family: var(--heading-03-font);
+  font-size: var(--heading-03-size);
+  line-height: var(--heading-03-lineheight);
+}
+
+#section1 .inner .text .text-title p {
+  font-family: var(--body-04-font);
+  font-weight: var(--body-04-weight);
+  font-size: var(--body-04-size);
+  line-height: var(--body-04-lineheight);
+}
+
+#section1 .inner .text .text-morepage {
+  font-family: var(--heading-06-font);
+  font-size: var(--heading-06-size);
+  line-height: var(--heading-06-lineheight);
+}
+
+#section1 .inner .text .text-morepage a {
+  display: block;
 }
 
 #section1 .inner .list {
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
 }
 
 #section1 .inner .list .item {
-  width: 24%;
-  background-color: #fff;
+  max-width: 286px;
+  width: 24.9%;
+}
+
+#section1 .inner .list .item li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#section1 .inner .list .item li .imagebox {
+}
+
+#section1 .inner .list .item li .imagebox img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#section1 .inner .list .item li .item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#section1 .inner .list .item li h3 {
+  font-family: var(--body-01-font);
+  font-size: var(--body-01-size);
+  line-height: var(--body-01-lineheight);
+  text-align: center;
+  color: #9c6144;
+}
+#section1 .inner .list .item li p {
+  font-family: var(--body-05-font);
+  font-weight: var(--body-05-weight);
+  font-size: var(--body-05-size);
+  line-height: var(--body-05-lineheight);
+  text-align: center;
+}
+#section1 .inner .list .item li strong {
+  display: block;
+  font-family: var(--body-03-font);
+  font-size: var(--body-03-size);
+  line-height: var(--body-03-lineheight);
+  text-align: center;
+  color: #d51811;
 }
 
 #section2 {
-  background: url("../img/Background_03.jpg") center center / cover no-repeat;
 }
 
 #section2 .inner {
-  max-width: 1280px;
-  width: calc(100% - 40px);
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
-#section2 .inner .item {
-  width: 24%;
+#section2 .inner .list {
+  max-width: 592px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
-#section2 .inner .item .image {
-  padding-bottom: 100%;
-  position: relative;
+#section2 .inner .list h2 {
+  font-family: var(--heading-03-font);
+  font-size: var(--heading-03-size);
+  line-height: var(--heading-03-lineheight);
+  text-align: center;
+}
+#section2 .inner .list p {
+  font-family: var(--body-04-font);
+  font-weight: var(--body-04-weight);
+  font-size: var(--body-04-size);
+  line-height: var(--body-04-lineheight);
+  text-align: center;
+}
+#section2 .inner .list a {
+  width: 286px;
+  height: 80px;
+  background-color: var(--color-yellow1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  font-family: var(--button-font);
+  font-weight: var(--button-weight);
+  font-size: var(--button-size);
+  line-height: var(--button-lineheight);
+  text-align: center;
 }
 
-#section2 .inner .item .image img {
+#section2 .inner .imagebox {
+  max-width: 745px;
+}
+#section2 .inner .imagebox img {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   object-fit: cover;
 }
 
-#section2 .inner .item strong {
-  background-color: #fff;
+#section3 {
+}
+#section3 .inner {
+}
+#section3 .inner .list {
+  display: flex;
+  justify-content: space-between;
+}
+#section3 .inner .list .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 439px;
+  width: 28.1%;
+}
+#section3 .inner .list .item img {
+  width: 100%;
+  object-fit: cover;
+}
+#section3 .inner .list .item .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#section3 .inner .list .item .text h2 {
+  font-family: var(--heading-05-font);
+  font-size: var(--heading-05-size);
+  line-height: var(--heading-05-lineheight);
+  text-align: center;
+}
+#section3 .inner .list .item .text p {
+  height: 0;
+  padding-bottom: 25.51%;
+  font-family: var(--body-05-font);
+  font-weight: var(--body-05-weight);
+  font-size: var(--body-05-size);
+  line-height: var(--body-05-lineheight);
+  text-align: center;
+  white-space: nowrap;
+}
+#section3 .inner .list .item a {
   display: block;
+  width: 297px;
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  font-family: var(--button-font);
+  font-weight: var(--button-weight);
+  font-size: var(--button-size);
+  line-height: var(--button-lineheight);
+  text-align: center;
 }

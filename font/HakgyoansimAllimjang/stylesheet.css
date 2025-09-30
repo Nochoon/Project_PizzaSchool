@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "HakgyoansimAllimjang-R";
+  src: url("HakgyoansimAllimjangTTF-R.eot");
+  src: url("HakgyoansimAllimjangTTF-R.eot?#iefix") format("embedded-opentype"),
+    url("HakgyoansimAllimjangTTF-R.woff2") format("woff2"),
+    url("HakgyoansimAllimjangTTF-R.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HakgyoansimAllimjang-B";
+  src: url("HakgyoansimAllimjangTTF-B.eot");
+  src: url("HakgyoansimAllimjangTTF-B.eot?#iefix") format("embedded-opentype"),
+    url("HakgyoansimAllimjangTTF-B.woff2") format("woff2"),
+    url("HakgyoansimAllimjangTTF-B.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

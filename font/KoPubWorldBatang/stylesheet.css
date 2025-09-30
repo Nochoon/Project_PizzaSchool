@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "KoPubWorldBatang";
+  src: url("KoPubWorldBatangBold.eot");
+  src: url("KoPubWorldBatangBold.eot?#iefix") format("embedded-opentype"),
+    url("KoPubWorldBatangBold.woff2") format("woff2"),
+    url("KoPubWorldBatangBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KoPubWorldBatang";
+  src: url("KoPubWorldBatangMedium.eot");
+  src: url("KoPubWorldBatangMedium.eot?#iefix") format("embedded-opentype"),
+    url("KoPubWorldBatangMedium.woff2") format("woff2"),
+    url("KoPubWorldBatangMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KoPubWorldBatang";
+  src: url("KoPubWorldBatangLight.eot");
+  src: url("KoPubWorldBatangLight.eot?#iefix") format("embedded-opentype"),
+    url("KoPubWorldBatangLight.woff2") format("woff2"),
+    url("KoPubWorldBatangLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
