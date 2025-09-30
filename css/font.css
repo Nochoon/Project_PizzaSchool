@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@import url("../font/BebasNeue/stylesheet.css");
+
+:root {
+  --heading-01-font: "BebasNeue";
+  --heading-01-size: 96px;
+  --heading-01-lineheight: 96px;
+
+  --heading-02-font: "BebasNeue";
+  --heading-02-size: 40px;
+  --heading-02-lineheight: 56px;
+}

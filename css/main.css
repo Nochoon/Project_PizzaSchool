@@ -1,0 +1,75 @@
+@charset "uft-8";
+
+@import url("reset.css");
+@import url("font.css");
+@import url("define.css");
+@import url("common.css");
+
+#fullpage {
+  padding-left: var(--header-width);
+}
+
+#section0 {
+  background: url("../img/Background_01.jpg") center center / cover no-repeat;
+}
+
+#section1 {
+  background: url("../img/Background_02.jpg") center center / cover no-repeat;
+}
+
+#section1 .inner {
+  max-width: 1280px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+
+#section1 .inner h2 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+#section1 .inner .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+#section1 .inner .list .item {
+  width: 24%;
+  background-color: #fff;
+}
+
+#section2 {
+  background: url("../img/Background_03.jpg") center center / cover no-repeat;
+}
+
+#section2 .inner {
+  max-width: 1280px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#section2 .inner .item {
+  width: 24%;
+}
+
+#section2 .inner .item .image {
+  padding-bottom: 100%;
+  position: relative;
+}
+
+#section2 .inner .item .image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+#section2 .inner .item strong {
+  background-color: #fff;
+  display: block;
+}
