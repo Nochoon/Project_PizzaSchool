@@ -1,4 +1,6 @@
 :root {
+  /* animation */
+  --header-AnimationTime: 0.5s;
   /* size */
   --header-width: 358px;
 

@@ -3,22 +3,26 @@
 @import url("reset.css");
 @import url("font.css");
 @import url("define.css");
+@import url("animation.css");
 
 body {
   line-height: normal;
 }
 
+/* header */
 .header {
+  width: 358px;
   height: 100%;
   background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 97;
   width: var(--header-width);
   padding: 0 52px;
   display: flex;
   align-items: center;
+  transition: all 0.5s ease-out 0.25s;
 }
 
 .header#Section01 {
@@ -37,75 +41,219 @@ body {
 }
 
 .header .header-wrap {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.header a {
+.header .header-wrap a {
   display: block;
 }
-.header a h1 {
+.header .header-wrap a h1 {
   font-family: "BebasNeue";
   font-size: var(--heading-01-size);
   line-height: var(--heading-01-lineheight);
 }
-.header .search-container {
+.header .header-wrap .search-container {
   position: relative;
   display: flex;
   width: 254px;
   height: 50px;
 }
 
-.header .search-container input[type="text"] {
+.header .header-wrap .search-container input[type="text"] {
   width: 100%;
   padding-left: 50px;
+  border-bottom: 1px solid; /* 위쪽 테두리만 빨간색으로 두께 2px 지정 */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  transition: all 0.5s ease-out 0.25s;
 }
 
-.header .search-container .search-button {
+.header .header-wrap .search-container .search-button {
   position: absolute;
   top: 5px;
   bottom: 5px;
   left: 5px;
+  transition: all 0.5s ease-out 0.25s;
 }
 
-.header#Section01 .search-container input[type="text"],
-.header#Section01 .search-container .search-button {
+.header#Section01 .header-wrap .search-container input[type="text"],
+.header#Section01 .header-wrap .search-container .search-button {
   color: #fff;
   background-color: var(--color-red);
 }
 
-.header#Section02 .search-container input[type="text"],
-.header#Section02 .search-container .search-button {
+.header#Section02 .header-wrap .search-container input[type="text"],
+.header#Section02 .header-wrap .search-container .search-button {
   color: #000;
   background-color: var(--color-yellow2);
 }
-.header#Section03 .search-container input[type="text"],
-.header#Section03 .search-container .search-button {
+.header#Section03 .header-wrap .search-container input[type="text"],
+.header#Section03 .header-wrap .search-container .search-button {
   color: #000;
   background-color: #fff;
 }
 
+.header .header-wrap .search-container .search-button .img-wrap {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.header .header-wrap .search-container .search-button .img-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease-out 0.25s;
+}
+
+.header#Section01
+  .header-wrap
+  .search-container
+  .search-button
+  .img-wrap
+  #search-black {
+  opacity: 0;
+}
+
+.header#Section02
+  .header-wrap
+  .search-container
+  .search-button
+  .img-wrap
+  .icon-search-black,
+.header#Section03
+  .header-wrap
+  .search-container
+  .search-button
+  .img-wrap
+  #search-black {
+  opacity: 1;
+}
+
+.header#Section01
+  .header-wrap
+  .search-container
+  .search-button
+  .img-wrap
+  #search-white {
+  opacity: 1;
+}
+
+.header#Section02 .search-container .search-button .img-wrap #search-white,
+.header#Section03 .search-container .search-button .img-wrap #search-white {
+  opacity: 0;
+}
+
 .header .nav {
+  width: 100%;
 }
 
 .header .nav .gnb {
+  width: 100%;
 }
 
-.header .nav .gnb li {
+.header .header-wrap .nav .gnb li {
   display: block;
   font-family: "BebasNeue";
   font-size: var(--heading-02-size);
   line-height: var(--heading-02-lineheight);
   margin-bottom: 10px;
+  position: relative;
 }
 
-.header .nav .gnb li:last-child {
+.header .header-wrap .nav .gnb li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.1s linear;
+}
+
+.header .header-wrap .nav .gnb li:hover::after {
+  width: 100%;
+  transition: width 0.25s linear;
+}
+
+.header .header-wrap .nav .gnb li:last-child {
   margin: 0;
 }
 
-.header .nav .gnb li a {
+.header .header-wrap .nav .gnb li a {
   display: block;
+}
+
+.header .header-wrap .sns {
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+}
+
+.header .header-wrap .sns a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.header#Section01 .header-wrap .sns a #instargram-black {
+  opacity: 0;
+}
+
+.header#Section02 .header-wrap .sns a #instargram-black,
+.header#Section03 .header-wrap .sns a #instargram-black {
+  opacity: 1;
+}
+
+.header#Section01 .header-wrap .sns a #instargram-white {
+  opacity: 1;
+}
+
+.header#Section02 .header-wrap .sns a #instargram-white,
+.header#Section03 .header-wrap .sns a #instargram-white {
+  opacity: 0;
+}
+
+.header .header-wrap .sns a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-out 0.25s;
+}
+
+.slide-image {
+  background-color: #000;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99;
+}
+
+.slide-image ul {
+  display: flex;
+  column-gap: 100px;
+  animation: scroll-animation 120s infinite normal linear;
+}
+
+.slide-image ul li {
+  white-space: nowrap;
+  width: 130px;
+}
+
+.slide-image ul li img {
+  width: 100%;
+  object-fit: cover;
 }
 
 #footer {

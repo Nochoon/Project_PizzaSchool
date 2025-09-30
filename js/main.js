@@ -16,7 +16,7 @@ window.onload = () => {
   header = document.querySelector(".header");
 
   //  fullpage
-  fullPageList();
+  InitfullPage();
 };
 
 window.addEventListener("hashchange", function () {
@@ -28,7 +28,7 @@ window.addEventListener("hashchange", function () {
   }
 });
 
-function fullPageList() {
+function InitfullPage() {
   var myFullpage = new fullpage("#fullpage", {
     sectionsColor: backgroundColorArr,
     anchors: anchors,
@@ -37,6 +37,7 @@ function fullPageList() {
     showActiveTooltip: true,
     menu: "#menu",
     responsiveWidth: 640,
+    scrollingSpeed: 900,
     afterResponsive: function (isResponsive) {},
   });
 }
