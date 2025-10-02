@@ -1,11 +1,11 @@
-const backgroundColorArr = ["#d51811", "#F9EDD3", "#fff", "#FFC83A", "#ccddff"];
+const backgroundColorArr = ["#d51811", "#F9EDD3", "#fff", "#FFC83A", "#d51811"];
 
 const anchors = [
   "Section01",
   "Section02",
   "Section03",
   "Section04",
-  "addfooter",
+  "Section05",
 ];
 
 let pageColorMap = new Map();
@@ -36,7 +36,7 @@ function InitfullPage() {
     navigationTooltips: ["Page 1", "Page 2", "Any text!"],
     showActiveTooltip: true,
     menu: "#menu",
-    responsiveWidth: 640,
+    responsiveWidth: 1670,
     scrollingSpeed: 900,
     afterResponsive: function (isResponsive) {},
   });

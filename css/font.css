@@ -30,8 +30,8 @@
   --heading-06-lineheight: 44.8px;
 
   --body-01-font: "HakgyoansimAllimjang-R";
-  --body-01-lineheight: 39.2px;
   --body-01-size: 32px;
+  --body-01-lineheight: 39.2px;
 
   --body-02-font: "KoPubWorldDotum";
   --body-02-weight: 500;
@@ -66,4 +66,8 @@
   --caption-01-weight: 500;
   --caption-01-size: 20px;
   --caption-01-lineheight: 22.4px;
+
+  --footer-01-font: "HakgyoansimAllimjang-B";
+  --footer-01-size: 16px;
+  --footer-01-lineheight: 22.4px;
 }
