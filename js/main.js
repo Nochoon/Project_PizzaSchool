@@ -43,7 +43,7 @@ function InitfullPage() {
 }
 
 $(document).ready(function () {
-  $(".header-top-wrap").on("click", function () {
+  $(".btn-menu-wrap").on("click", function () {
     $(this).find(".hambergerIcon").toggleClass("open");
   });
 });

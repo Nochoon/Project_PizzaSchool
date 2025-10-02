@@ -12,7 +12,7 @@
 .inner {
   max-width: 1562px;
   width: calc(100% - 52px);
-  padding: 0 52px;
+  padding: 52px;
   margin: 0 auto;
 }
 
@@ -505,9 +505,10 @@
   }
   .inner {
     max-width: 1920px;
+
     width: calc(100% - 52px);
     margin: 0 auto;
-    padding: 52px 0;
+    padding-top: 50px;
   }
 
   #section2 .inner {
@@ -523,7 +524,11 @@
   }
 
   #section3 .inner .list {
-    gap: 100px;
+    /* gap: 100px; */
+  }
+
+  #section3 .inner .list .item {
+    width: 25%;
   }
 
   @media screen and (max-width: 760px) {
