@@ -7,71 +7,44 @@
 :root {
   --heading-01-font: "BebasNeue";
   --heading-01-size: 96px;
-  --heading-01-lineheight: 96px;
 
-  --heading-02-font: "BebasNeue";
-  --heading-02-size: 40px;
-  --heading-02-lineheight: 56px;
+  --heading-02-font: "HakgyoansimAllimjang-B";
+  --heading-02-size: 80px;
 
-  --heading-03-font: "HakgyoansimAllimjang-B";
-  --heading-03-size: 80px;
-  --heading-03-lineheight: 112px;
+  --title-01-font: "HakgyoansimAllimjang-B";
+  --title-01-size: 56px;
 
-  --heading-04-font: "HakgyoansimAllimjang-B";
-  --heading-04-size: 72px;
-  --heading-04-lineheight: 100.8px;
+  --title-02-font: "HakgyoansimAllimjang-B";
+  --title-02-size: 48px;
 
-  --heading-05-font: "HakgyoansimAllimjang-B";
-  --heading-05-size: 56px;
-  --heading-05-lineheight: 78.4px;
+  --title-03-font: "HakgyoansimAllimjang-R";
+  --title-03-size: 32px;
 
-  --heading-06-font: "HakgyoansimAllimjang-B";
-  --heading-06-size: 48px;
-  --heading-06-lineheight: 67.2px;
+  --body-01-font: "KoPubWorldDotum";
+  --body-01-weight: 500;
+  --body-01-size: 28px;
 
-  --heading-07-font: "HakgyoansimAllimjang-B";
-  --heading-07-size: 32px;
-  --heading-07-lineheight: 44.8px;
+  --body-02-font: "HakgyoansimAllimjang-B";
+  --body-02-size: 24px;
 
-  --body-01-font: "HakgyoansimAllimjang-R";
-  --body-01-size: 32px;
-  --body-01-lineheight: 39.2px;
-
-  --body-02-font: "KoPubWorldDotum";
-  --body-02-weight: 500;
-  --body-02-size: 28px;
-  --body-02-lineheight: 39.2px;
-
-  --body-03-font: "HakgyoansimAllimjang-B";
-  --body-03-size: 24px;
-  --body-03-lineheight: 33.6px;
+  --body-03-font: "KoPubWorldDotum";
+  --body-03-weight: 500;
+  --body-03-size: 20px;
 
   --body-04-font: "KoPubWorldDotum";
   --body-04-weight: 500;
-  --body-04-size: 24px;
-  --body-04-lineheight: 33.6px;
-
-  --body-05-font: "KoPubWorldDotum";
-  --body-05-weight: 500;
-  --body-05-size: 20px;
-  --body-05-lineheight: 28px;
-
-  --body-06-font: "KoPubWorldDotum";
-  --body-06-weight: 500;
-  --body-06-size: 16px;
-  --body-06-lineheight: 22.4px;
+  --body-04-size: 16px;
 
   --button-font: "KoPubWorldDotum";
   --button-weight: bold;
   --button-size: 20px;
-  --button-lineheight: 28px;
 
   --caption-01-font: "KoPubWorldDotum";
   --caption-01-weight: 500;
   --caption-01-size: 20px;
-  --caption-01-lineheight: 22.4px;
 
   --footer-01-font: "HakgyoansimAllimjang-B";
   --footer-01-size: 16px;
-  --footer-01-lineheight: 22.4px;
+
+  --lineheight: 1.4;
 }
