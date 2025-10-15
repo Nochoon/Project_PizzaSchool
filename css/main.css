@@ -92,8 +92,8 @@
 
 #section1 .inner .text .text-morepage {
   font-family: var(--title-02-font);
-  font-size: var(--title-02-size);
-  line-height: calc(var(--title-02-size) * var(--lineheight));
+  font-size: var(--title-03-size);
+  line-height: calc(var(--title-03-size) * var(--lineheight));
 }
 
 #section1 .inner .text .text-morepage a {
@@ -384,7 +384,62 @@
   font-size: var(--footer-01-size);
   line-height: calc(var(--footer-01-size) * var(--lineheight));
 }
+@media screen and (max-width: 1800px) {
+  #fullpage {
+    padding: 0;
+  }
 
+  .inner {
+    max-width: 1920px;
+
+    width: calc(100% - 52px);
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  #section2 .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section3 .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #section3 .inner .list {
+    /* gap: 100px; */
+  }
+
+  #section3 .inner .list .item {
+    width: 25%;
+  }
+
+  @media screen and (max-width: 760px) {
+    #section3 .inner .list {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    #section1 .inner .list .item {
+      width: 42%;
+    }
+    #section2 .inner .list .text h2 {
+      font-family: var(--title-02-font);
+      font-size: var(--title-02-size);
+      line-height: calc(var(--title-02-size) * var(--lineheight));
+    }
+    #section2 .inner .list .text p {
+      font-family: var(--body-04-font);
+      font-weight: var(--body-04-weight);
+      font-size: var(--body-04-size);
+      line-height: calc((var(--body-04-size) * var(--lineheight)));
+    }
+  }
+}
 @media screen and (max-width: 1675px) {
   #section1 .inner .list .item li h3 {
     font-family: "HakgyoansimAllimjang-R";
@@ -398,6 +453,11 @@
 }
 
 @media screen and (max-width: 1440px) {
+  .inner {
+    width: calc(100% - 10px);
+    padding: 52px 10px;
+  }
+
   #section2 .inner .list {
     flex-direction: column;
     align-items: center;
@@ -441,18 +501,6 @@
     font-size: var(--body-03-size);
     text-align: calc((var(--body-03-size) * var(--lineheight)));
   }
-
-  #section3 .inner .list {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #section3 .inner .list .item {
-    width: 47%;
-  }
-  #section3 .inner .list .item .text h2 {
-    font-size: var(--title-03-size);
-    line-height: calc((var(--title-03-size) * var(--lineheight)));
-  }
 }
 
 /* PC -> Tabblet */
@@ -473,15 +521,18 @@
     column-gap: 100px;
     row-gap: 50px;
   }
+  #section1 .inner .text .text-title {
+    margin-top: 50px;
+  }
 
   #section1 .inner .text .text-title h2 {
     text-align: center;
   }
   #section1 .inner .text .text-morepage {
     width: 100%;
-    font-family: "HakgyoansimAllimjang-B";
-    font-size: 48px;
-    line-height: calc(48px * var(--lineheight));
+
+    /* font-size: var(--title-03-size);
+    line-height: calc(var(--title-03-size) * var(--lineheight)); */
   }
   #section1 .inner .text .text-morepage a {
     text-align: end;
@@ -492,7 +543,34 @@
     width: 34%;
   }
 
+  #section3 .inner .list {
+    margin: 100px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  #section3 .inner .list .item {
+    width: 51%;
+  }
+
+  #section3 .inner .list .item .text {
+  }
+
   #section3 .inner .list .item .text h2 {
+    font-size: var(--title-01-size);
+    font-family: var(--title-01-font);
+    line-height: calc(var(--title-01-size) * var(--lineheight));
+  }
+
+  #section3 .inner .list .item .text p {
+    font-family: var(--body-01-font);
+    font-weight: var(--body-01-weight);
+    font-size: var(--body-01-size);
+    line-height: calc(var(--body-01-size) * var(--lineheight));
+  }
+
+  /* #section3 .inner .list .item .text h2 {
     font-size: var(--body-02-size);
     line-height: calc((var(--body-02-size) * var(--lineheight)));
   }
@@ -500,60 +578,23 @@
   #section3 .inner .list .item .text p {
     font-size: var(--body-04-size);
     line-height: calc((var(--body-04-size) * var(--lineheight)));
+  } */
+}
+
+@media screen and (max-width: 760px) {
+  #section3 .inner .list .item {
+    width: 80%;
+  }
+
+  #section3 .inner .list .item .text p {
+    font-size: var(--body-03-size);
+    line-height: calc(var(--body-03-size) * var(--lineheight));
   }
 }
 
-@media screen and (max-width: 1800px) {
-  #fullpage {
-    padding: 0;
-  }
-  .inner {
-    max-width: 1920px;
-
-    width: calc(100% - 52px);
-    margin: 0 auto;
-    padding-top: 50px;
-  }
-
-  #section2 .inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #section3 .inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #section3 .inner .list {
-    /* gap: 100px; */
-  }
-
-  #section3 .inner .list .item {
-    width: 25%;
-  }
-
-  @media screen and (max-width: 760px) {
-    #section3 .inner .list .item .text h2 {
-    }
-  }
-
-  @media screen and (max-width: 640px) {
-    #section1 .inner .list .item {
-      width: 42%;
-    }
-    #section2 .inner .list .text h2 {
-      font-family: var(--title-02-font);
-      font-size: var(--title-02-size);
-      line-height: calc(var(--title-02-size) * var(--lineheight));
-    }
-    #section2 .inner .list .text p {
-      font-family: var(--body-04-font);
-      font-weight: var(--body-04-weight);
-      font-size: var(--body-04-size);
-      line-height: calc((var(--body-04-size) * var(--lineheight)));
-    }
+@media screen and (max-width: 510px) {
+  #section3 .inner .list .item .text h2 {
+    font-size: var(--title-03-size);
+    line-height: calc(var(--title-03-size) * var(--lineheight));
   }
 }

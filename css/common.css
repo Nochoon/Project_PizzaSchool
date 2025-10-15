@@ -7,6 +7,7 @@
 
 body {
   line-height: normal;
+  max-width: 1920px;
 }
 
 /* header */
@@ -231,9 +232,6 @@ body {
   transition: width 0.3s linear;
 }
 
-.header#Section01 .header-wrap .nav .gnb li {
-}
-
 .header .header-wrap .nav .gnb li:last-child {
   margin: 0;
 }
@@ -320,7 +318,7 @@ body {
 
 .header-top {
   width: 100%;
-  padding: 0 30px;
+  padding: 25px 30px;
   position: fixed;
   align-items: center;
   z-index: 99;
@@ -340,18 +338,29 @@ body {
   color: #fff;
 }
 
+.header-top h1#Section01,
+.header-top h1#Section04,
+.header-top h1#Section05 {
+  color: #fff;
+}
+
+.header-top h1#Section02,
+.header-top h1#Section03 {
+  color: #000;
+}
+
 /*  */
 .btn-menu {
   /* position: fixed; */
   /* margin: auto; */
-  width: 50px;
-  height: 50px;
+  width: 32px;
+  height: 32px;
   /* display: flex
 ; */
   /* z-index: 99; */
 }
 
-.btn-menu-wrap {
+.btn-menu .btn-menu-wrap {
   width: 100%;
   height: 100%;
   position: relative;
@@ -360,26 +369,29 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.btn-menu-wrap:hover {
+.btn-menu .btn-menu-wrap:hover {
   cursor: pointer;
 }
 
 .hambergerIcon {
-  height: 10px;
-  width: 70px;
+  height: 5px;
+  width: 32px;
   position: absolute;
   top: 50%;
   left: 50%;
   border-radius: 50px;
   transform: translate(-50%, -50%) rotate(0deg);
-  transition: all ease 0.5s;
+  transition: transform ease 0.5s;
 }
 
-.hambergerIcon#Section01 {
+.header-top .hambergerIcon#Section01,
+.header-top .hambergerIcon#Section04,
+.header-top .hambergerIcon#Section05 {
   background-color: #fff;
 }
 
-.hambergerIcon#Section02 {
+.hambergerIcon#Section02,
+.hambergerIcon#Section03 {
   background-color: #000;
 }
 
@@ -392,15 +404,15 @@ body {
   background-color: inherit;
   margin: auto;
   width: 50%;
-  transition: all ease 0.5s;
+  transition: transform ease 0.5s;
 }
 .hambergerIcon::before {
-  top: -20px;
+  top: -10px;
   left: 0;
   transform-origin: left;
 }
 .hambergerIcon::after {
-  bottom: -20px;
+  bottom: -10px;
   right: 0;
   transform-origin: right;
 }
@@ -415,7 +427,79 @@ body {
 .open::after {
   bottom: 0;
   transform: translateX(-100%) rotate(-90deg);
-} /*# sourceMappingURL=hamberger.css.map */
+}
+
+.nav-page {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-red);
+  position: fixed;
+  top: -100%;
+  /* display: none; */
+  transition: top 0.5s linear;
+  overflow-y: auto;
+  z-index: 98;
+}
+
+.nav-page#Section01 {
+  color: #fff;
+  background-color: var(--color-red);
+}
+
+.nav-page#Section02 {
+  color: #000;
+  background-color: var(--color-yellow2);
+}
+
+.nav-page#Section03 {
+  color: #000;
+  background-color: #fff;
+}
+
+.nav-page#Section04 {
+  color: #000;
+  background-color: var(--color-yellow1);
+}
+
+.nav-page#Section05 {
+  color: #fff;
+  background-color: var(--color-red);
+}
+
+.nav-page.active {
+  top: 0;
+}
+
+.nav-page .gnb {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+}
+
+.nav-page .gnb li {
+}
+
+.nav-page .gnb li a {
+  display: block;
+  font-family: var(--heading-01-font);
+  font-size: var(--heading-01-size);
+  line-height: calc(var(--heading-01-size) * var(--lineheight));
+  color: #fff;
+}
+
+.nav-page#Section01 .gnb li a,
+.nav-page#Section04 .gnb li a,
+.nav-page#Section05 .gnb li a {
+  color: #fff;
+}
+
+.nav-page#Section02 .gnb li a,
+.nav-page#Section03 .gnb li a {
+  color: #000;
+}
 
 @media screen and (max-width: 1800px) {
   .header {
