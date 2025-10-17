@@ -309,77 +309,101 @@
 }
 
 #section4 .inner {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 100px;
 }
 
-#section4 .inner .title {
+#section4 .inner .textbox {
+  width: 100%;
+}
+
+#section4 .inner .textbox .title {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
-#section4 .inner .title h1 {
+#section4 .inner .textbox .title h1 {
   font-family: var(--heading-01-font);
   font-size: var(--heading-01-size);
   line-height: calc(var(--heading-01-size) * var(--lineheight));
 }
-#section4 .inner .text {
+#section4 .inner .textbox .text {
+  margin-top: 50px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-#section4 .inner .left {
+#section4 .inner .textbox .left {
+  width: 50%;
 }
-#section4 .inner .left .document {
+
+#section4 .inner .textbox .left .document {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-#section4 .inner .left .document strong {
+#section4 .inner .textbox .left .document a {
+  display: block;
+}
+
+#section4 .inner .textbox .left .document strong {
   font-family: "HakgyoansimAllimjang-B";
   font-size: 24px;
   line-height: calc(24px * var(--lineheight));
 }
-#section4 .inner .text .right {
+#section4 .inner .textbox .text .right {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  width: 50%;
+
+  overflow: hidden;
 }
-#section4 .inner .text .right .company {
+#section4 .inner .textbox .text .right .company {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
+  text-align: end;
 }
-#section4 .inner .text .right .company strong {
+
+#section4 .inner .textbox .text .right .company strong {
   font-family: var(--body-03-font);
   font-weight: var(--body-03-weight);
   font-size: var(--body-03-size);
   line-height: calc(var(--body-03-size) * var(--lineheight));
 }
-#section4 .inner .text .right .company p {
+#section4 .inner .textbox .text .right .company p {
   font-family: var(--body-03-font);
   font-weight: var(--body-03-weight);
   font-size: var(--body-03-size);
   line-height: calc(var(--body-03-size) * var(--lineheight));
 }
 
-#section4 .inner .text .right .tel {
+#section4 .inner .textbox .text .right .tel {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  text-align: end;
 }
 
-#section4 .inner .text .right .tel p {
+#section4 .inner .textbox .text .right .tel p {
   font-family: var(--body-02-font);
   font-weight: var(--body-02-weight);
   font-size: var(--body-02-size);
   line-height: calc(var(--body-02-size) * var(--lineheight));
 }
-#section4 .inner .copyright {
+
+#section4 .inner .textbox .copyright {
+  margin-top: 50px;
 }
-#section4 .inner .copyright p {
+
+#section4 .inner .textbox .copyright p {
   font-family: var(--footer-01-font);
   font-size: var(--footer-01-size);
   line-height: calc(var(--footer-01-size) * var(--lineheight));
@@ -581,6 +605,35 @@
   } */
 }
 
+@media screen and (max-width: 855px) {
+  #section4 .inner {
+  }
+
+  #section4 .inner .textbox .text {
+    flex-direction: column;
+    gap: 50px;
+  }
+  #section4 .inner .textbox .text .left,
+  #section4 .inner .textbox .text .right {
+    width: 100%;
+  }
+
+  #section4 .inner .textbox .left .document {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  #section4 .inner .textbox .text .right .company {
+    gap: 10px;
+  }
+
+  #section4 .inner .textbox .text .right .company strong,
+  #section4 .inner .textbox .text .right .company p,
+  #section4 .inner .textbox .text .right .tel {
+    text-align: start;
+  }
+}
+
 @media screen and (max-width: 760px) {
   #section3 .inner .list .item {
     width: 80%;
@@ -596,5 +649,20 @@
   #section3 .inner .list .item .text h2 {
     font-size: var(--title-03-size);
     line-height: calc(var(--title-03-size) * var(--lineheight));
+  }
+
+  #section4 .inner .textbox .title h1 {
+    /* font-weight: var(--title-01-weight);
+    font-size: var(--title-01-size);
+    line-height: calc(var(--title-01-size) * var(--lineheight)); */
+
+    font-size: 72px;
+    line-height: calc(72px * var(--lineheight));
+  }
+  #section4 .inner .textbox .text .right .company p {
+    font-family: var(--body-04-font);
+    font-weight: var(--body-04-weight);
+    font-size: var(--body-04-size);
+    line-height: calc(var(--body-04-size) * var(--lineheight));
   }
 }
